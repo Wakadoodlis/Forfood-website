@@ -20,9 +20,12 @@ body {
 }
 
 header {
+  /* padaromas paveiksliukas patamsintas, kad butu galima uzrasyti teksta */
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("img/hero.jpg");
+    /* padaromas, kad paveiksliukas uzdengtu viska ir kad butu centre  */
   background-size: cover;
   background-position: center;
+      /* padaromas, kad paveiksliukas turetu view height ( per atidaryta langa) */
   height: 100vh;
 }
 
@@ -31,11 +34,68 @@ header {
   width: 960px;
   top:50%;
   left: 50%;
+  /* be transform - tekstas butu zemiau. situo tekstas pakeliamas */
   transform: translate(-50%, -50%);
 }
 
 
 
 h1 {
-  margin:0;
+  margin-top:0;
+  margin-bottom: 20px;
+  color: #fff;
+    /* daromas procentais, 200% atitinka 20px. Jei noresima pakeisti, pakeist reiks body, ir cia pasikeis automatiskai */
+  font-size:240%;
+      /* jei pagrindini h1 teksta dideli - reikia nuimti raidziu weight, uzdeti spacing tarp raidziu ir zodziu */
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+/* :link reiskia mygtuko busena normalioje busenoje; visited- busena aplankius */
+.btn:link, 
+.btn:visited {
+/* inline- block ( mix tarp line ir block) - galima uzdeti margin ir pading. */
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  /* perejimas i uzdeta spalva ne is kart, o per 0.2 s */
+  transition: background-color 0.4s, border 0.4s, color 0.4s;
+}
+
+.btn-full:link, 
+.btn-full:visited {
+  /*  flat ui colors -  https://flatuicolors.com/palette/defo*/
+  background-color:#e67e22;
+  /*  uzdejus border, mygtukas ghost tapo didesnis, todel islyginant dydi borderi uzdedam ir sitam */
+  border:1px solid #e67e22; 
+  color:#fff;
+  margin-right: 15px
+}
+
+.btn-ghost:link, 
+.btn-ghost:visited {
+  border:1px solid #e67e22;
+  color:#e67e22;
+}
+
+  /* :hover busena, kai pelyte uzvaziuoja ant mygtuko, o active - paspaudus*/
+.btn:hover,
+.btn:active {
+    /* 0to255.com - parenka visus naudojamos spalvos atspalvius*/
+    background-color:#cf6d17; 
+  }
+
+.btn-full:hover, 
+.btn-full:active {
+  border:1px solid #cf6d17; 
+ 
+}
+
+.btn-ghost:hover, 
+.btn-ghost:active {
+  border:1px solid #cf6d17;
+  color:#fff;
 }
