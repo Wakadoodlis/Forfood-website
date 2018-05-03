@@ -1,3 +1,16 @@
+/* ----------------------------------------------------------------------------------*/
+                      /* $COPY 2018 MARBONAS */                                               
+/* -------------------------------------------------------------------------------- */
+
+
+
+/*
+orange color: #e67e22
+darker orange: #cf6d17
+*/
+
+
+
 /* ------------------------------------------- */
 /* BASIC SETUP */
 /* ------------------------------------------- */
@@ -110,4 +123,42 @@ header {
   left: 50%;
   /* be transform - tekstas butu zemiau. situo tekstas pakeliamas */
   transform: translate(-50%, -50%);
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float:left;
+  margin-top: 20px;
+}
+
+.main-nav {
+  float: right;
+  /* basic steps formating nav*/
+  list-style: none;
+  margin-top: 50px;
+}
+
+.main-nav li {
+  /* https://www.w3schools.com/css/css_inline-block.asp*/
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color:#fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* norim procentais.jei 18px, tuomet 18/20(bendras dydis)=0.9*100=90% */
+  font-size: 90%;
+  /* tam kad hover veiktu, borderis turi buti, todel ji suteikiam tik padarom nematomu*/
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.7s;
+  padding: 6px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #e67e22; 
 }
