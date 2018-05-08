@@ -30,25 +30,81 @@ body {
 }
 
 /* ----------------------------------------------- */
-/* BASIC SETUP */
+/* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
 .row {
   width: 960px;
   margin:0 auto;
 }
+section {
+  padding: 80px;
+}
+
+.box {
+  padding: 1%;
+}
 /* -----------HEADINGS----------------------------- */
 
-h1 {
-  margin-top:0;
-  margin-bottom: 20px;
-  color: #fff;
-    /* daromas procentais, 200% atitinka 20px. Jei noresima pakeisti, pakeist reiks body, ir cia pasikeis automatiskai */
-  font-size:240%;
-      /* jei pagrindini h1 teksta dideli - reikia nuimti raidziu weight, uzdeti spacing tarp raidziu ir zodziu */
+
+h1
+h2
+h3 {
+  /* jei pagrindini teksta darom dideli - reikia nuimti raidziu weight, uzdeti spacing tarp raidziu ir zodziu */
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 1px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color:#fff;
+  /* daromas procentais, 200% atitinka 20px. Jei noresima pakeisti, pakeist reiks body, ir cia pasikeis automatiskai */
+  font-size:240%;
   word-spacing: 4px;
+}
+
+h2 {
+  font-size:180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size:110%;
+  margin-bottom: 15px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+/* -----------PARAGRAPHS------------------------------- */
+
+.long-copy {
+  line-height: 145%;
+  width: 85%;
+  /* uzdejus width 85 - paragrafas nera per vidury, todel padarome kad butu per vidury su  marg-left. Is viso yra 100 proc, jei width duodam 85, tuomet lieka 15 proc. Darom is kaires ir desines kad butu po 7.5 ( viso 100) */
+  margin-left: 7.5%;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/* -----------ICONS------------------------------- */
+
+.icon-big {
+  font-size: 260%;
+  display: block;
+  color: #cf6d17;
+  margin-bottom: 10px;
 }
 
 /* -----------BUTTONS------------------------------- */
