@@ -309,7 +309,7 @@ header {
 }
 /* last of type, parenka paskutini */
 .work-step:last-of-type {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .work-step div {
@@ -330,4 +330,9 @@ header {
   height: 50px;
   width: auto;
   margin-right: 10px;
+}
+
+.stores {
+  text-align: center;
+  padding-left: 50px;
 }
