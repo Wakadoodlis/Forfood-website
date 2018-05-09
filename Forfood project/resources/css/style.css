@@ -336,3 +336,29 @@ header {
   text-align: center;
   padding-left: 50px;
 }
+
+/* --------------------------------------------- */
+/* CITIES */
+/* --------------------------------------------- */
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.cities-feature {
+  margin-bottom: 5px;
+}
+
+.icon-small {
+  color: #cf6d17;
+  padding-right: 10px;
+  text-align: justify;
+  
+}
+
+.cities-feature p {
+ display: inline;
+
+}
