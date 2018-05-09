@@ -23,7 +23,7 @@ darker orange: #cf6d17
 
 body {
   background-color: #fff;
-  color:#333;
+  color:#555;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   text-rendering: optimizeLegibility;
@@ -116,6 +116,20 @@ h2:after {
   margin-bottom: 10px;
 }
 
+.icon-small {
+  color: #cf6d17;
+  padding-right: 10px;
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  font-size: 120%;
+
+  /* align text and icons */
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+
 /* -----------BUTTONS------------------------------- */
 
 /* :link reiskia mygtuko busena normalioje busenoje; visited- busena aplankius */
@@ -165,7 +179,23 @@ h2:after {
   border:1px solid #cf6d17;
   color:#fff;
 }
+/* -----------links------------------------------- */
 
+a:link,
+a:visited {
+  text-decoration: none;
+  border-bottom: 2px solid #cf6d17;
+  color: #cf6d17;
+  
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 2px solid  transparent;
+  transition: 0.3s;
+
+}
 
 /* --------------------------------------------- */
 /* HEADER */
@@ -326,6 +356,11 @@ header {
   margin-right: 25px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+  border:0;
+}
+
 .btn-app img {
   height: 50px;
   width: auto;
@@ -349,16 +384,17 @@ header {
 
 .cities-feature {
   margin-bottom: 5px;
-}
-
-.icon-small {
-  color: #cf6d17;
-  padding-right: 10px;
-  text-align: justify;
-  
+ 
 }
 
 .cities-feature p {
  display: inline;
 
 }
+
+.cities-feature a {
+  display: inline;
+
+ 
+ }
+
