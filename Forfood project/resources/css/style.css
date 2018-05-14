@@ -207,6 +207,7 @@ header {
     /* padaromas, kad paveiksliukas uzdengtu viska ir kad butu centre  */
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
       /* padaromas, kad paveiksliukas turetu view height ( per atidaryta langa) */
   height: 100vh;
 }
@@ -394,7 +395,49 @@ header {
 
 .cities-feature a {
   display: inline;
-
- 
  }
+
+ /* --------------------------------------------- */
+/* Testimonials */
+/* --------------------------------------------- */
+
+ .section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("img/back-customers.jpg");
+  /* linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), padaromas, kad paveiksliukas uzdengtu viska ir kad butu centre  */
+  background-size: cover;
+  background-attachment: fixed;
+    /* padaromas, kad paveiksliukas turetu view height ( per atidaryta langa) */
+  height: 100vh;
+  color:#fff;
+ }
+
+ blockquote {
+   padding: 2%;
+   font-style: italic;
+   line-height: 145%;
+   position: relative;
+   margin-top: 40px;
+ }
+
+ cite {
+   font-size: 90%;
+   margin-top: 25px;
+   display: block;
+ }
+ blockquote:before {
+   content: "\201C" ;
+   font-size: 400%;
+   display: block;
+   position: absolute;
+   top:-5px;
+   left:-5px;
+ }
+
+ cite img {
+   border-radius: 50%;
+   height: 45px;
+   margin-right: 10px;
+   vertical-align: middle;
+ }
+
 
