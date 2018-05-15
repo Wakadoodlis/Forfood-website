@@ -134,7 +134,8 @@ h2:after {
 
 /* :link reiskia mygtuko busena normalioje busenoje; visited- busena aplankius */
 .btn:link, 
-.btn:visited {
+.btn:visited,
+ input[type=submit]{
 /* inline- block ( mix tarp line ir block) - galima uzdeti margin ir pading. */
   display: inline-block;
   padding: 10px 30px;
@@ -146,7 +147,8 @@ h2:after {
 }
 
 .btn-full:link, 
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
   /*  flat ui colors -  https://flatuicolors.com/palette/defo*/
   background-color:#e67e22;
   /*  uzdejus border, mygtukas ghost tapo didesnis, todel islyginant dydi borderi uzdedam ir sitam */
@@ -163,7 +165,9 @@ h2:after {
 
   /* :hover busena, kai pelyte uzvaziuoja ant mygtuko, o active - paspaudus*/
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active  {
     /* 0to255.com - parenka visus naudojamos spalvos atspalvius*/
     background-color:#cf6d17; 
   }
@@ -505,6 +509,34 @@ header {
   padding: 5px 0;
 }
 
+ /* --------------------------------------------- */
+/* form */
+/* --------------------------------------------- */
+
+.contact-form {
+  width: 60%;
+  margin-left: 10%;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 70%;
+  padding: 7px;
+  border-radius: 4px;
+  border:1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"] {
+  margin:10px 5px 10px 0;
+}
+
+*:focus {outline:none;}
 
 
 
