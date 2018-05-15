@@ -515,7 +515,7 @@ header {
 
 .contact-form {
   width: 60%;
-  margin-left: 10%;
+  margin:0 auto;
   font-size: 80%;
 }
 
@@ -532,7 +532,9 @@ textarea {
 textarea {
   height: 100px;
 }
-
+#form-name {
+  width: 22%;
+}
 input[type="checkbox"] {
   margin:10px 5px 10px 0;
 }
