@@ -21,35 +21,29 @@
     <nav>
       <div class="row">
         <img src="resources/img/logo-white.png" alt="logo" class="logo">
+        <img src="resources/img/logo.png" alt="logo" class="logo-black">
         <ul class="main-nav">
-          <li>
-            <a href="#">Food delivery</a>
-          </li>
-          <li>
-            <a href="#">How it works</a>
-          </li>
-          <li>
-            <a href="#">Our cities</a>
-          </li>
-          <li>
-            <a href="#">Sign up! </a>
-          </li>
+          <li><a href="#features">Food delivery</a></li>
+          <li><a href="#work">How it works</a></li>
+          <li><a href="#cities">Our cities</a></li>
+          <li><a href="#sign-up">Sign up! </a></li>
         </ul>
       </div>
     </nav>
-
 
     <div class="hero-text-box">
       <h1>Goodbye junk food.
         <br> Hello super healthy meals.</h1>
       <!--padaromi du mygtukai. vienas orange kias vaiduoklisko stiliaus -->
-      <a class="btn btn-full" href="#">I’m hungry</a>
-      <a class="btn btn-ghost" href="#">Show me more</a>
+      <a class="btn btn-full js--scrol-to-plans" href="#">I’m hungry</a>
+      <a class="btn btn-ghost js--scrol-to-start" href="#">Show me more</a>
     </div>
 
   </header>
 
-  <section class="section-features">
+
+
+  <section class="section-features js--section-features" id="features">
     <div class="row">
       <h2>Get food fast &mdash; not fast food</h2>
       <p class="long-copy">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So
@@ -64,8 +58,6 @@
           choose to order more flexibly if that's your style.</p>
       </div>
 
-
-
       <div class="col span-1-of-4 box">
         <i class="ion-ios-timer-outline icon-big"></i>
         <h3>Ready in 20 minutes</h3>
@@ -73,15 +65,12 @@
           with the best chefs in each town to ensure that you're 100% happy.</p>
       </div>
 
-
-
       <div class="col span-1-of-4 box">
         <i class="ion-ios-nutrition-outline icon-big"></i>
         <h3>100% organic</h3>
         <p>All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for
           your health, the environment, and it also tastes better!</p>
       </div>
-
 
       <div class="col span-1-of-4 box">
         <i class="ion-ios-cart-outline icon-big"></i>
@@ -92,6 +81,8 @@
     </div>
 
   </section>
+
+
 
   <section class="section-meals">
     <!-- nenaudojam row, kad sita sekcija turetu 100 puslapio plucio ( width)-->
@@ -149,7 +140,9 @@
   </section>
 
 
-  <section class="section-steps">
+
+
+  <section class="section-steps" id="work">
     <div class="row">
       <h2>How it works &mdash; Simple as 1, 2, 3</h2>
     </div>
@@ -186,7 +179,9 @@
     </div>
   </section>
 
-  <section class="section-cities">
+
+
+  <section class="section-cities" id="cities">
     <div class="row">
       <h2>We're currently in these cities</h2>
     </div>
@@ -277,6 +272,9 @@
     </div>
   </section>
 
+
+
+
   <section class="section-testimonials">
     <div class="row">
       <h2>Our customers can't live without us</h2>
@@ -291,7 +289,6 @@
         </blockquote>
       </div>
 
-
       <div class="col span-1-of-3">
         <blockquote> Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver.Now
           that I got used to it, I couldn't live without my daily meals!
@@ -299,7 +296,6 @@
             <img src="resources/img/customer-2.jpg">Joana Silva</cite>
         </blockquote>
       </div>
-
 
       <div class="col span-1-of-3">
         <blockquote> Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver.
@@ -311,7 +307,9 @@
     </div>
   </section>
 
-  <section class="section-plans">
+
+
+  <section class="section-plans js--section-plans" id="sign-up">
     <div class="row">
       <h2>Start eating healthy today</h2>
     </div>
@@ -345,7 +343,6 @@
 
       </div>
 
-
       <div class="col span-1-of-3">
         <div class="plan-box">
           <div>
@@ -372,7 +369,6 @@
           </div>
         </div>
       </div>
-
 
       <div class="col span-1-of-3">
         <div class="plan-box">
@@ -407,6 +403,8 @@
       </div>
     </div>
   </section>
+
+
 
   <section class="section-form">
     <div class="row">
@@ -542,8 +540,9 @@
   <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
   <!--for pseudo classes in explorer 6,7 and 5-->
   <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
-
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
   <script src="resources/js/script.js"></script> 
+
 
 </body>
 
