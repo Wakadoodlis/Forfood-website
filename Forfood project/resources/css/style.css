@@ -213,7 +213,9 @@ a:active {
 
 header {
   /* padaromas paveiksliukas patamsintas, kad butu galima uzrasyti teksta */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("img/hero.jpg");
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+  background-size: cover;
     /* padaromas, kad paveiksliukas uzdengtu viska ir kad butu centre  */
   background-size: cover;
   background-position: center;
@@ -314,20 +316,22 @@ header {
   width: 100%;
   height: auto;
   /* ANIMACIJA */
-  -webkit-transform: scale(1.15);
-  -ms-transform: scale(1.15);
-  transform: scale(1.15);
-  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transform: scale (1.15);
+  -webkit-transform: scale (1.15);
+  -ms-transform: scale (1.15);
   transition: transform 0.5s, opacity 0.5s;
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  
   
 
 }
-/* ANIMACIJA */c
+/* ANIMACIJA */
 .meal-photo img:hover {
   opacity: 1;
-  -webkit-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  transform: scale(1.03);
+  transform: scale (1.03);
+  -webkit-transform: scale (1.03);
+  -ms-transform: scale (1.03);
+  
 }
 
 /* --------------------------------------------- */
@@ -473,11 +477,19 @@ header {
   margin-left: 5%;
   box-shadow: 0 2px 2px #efefef;
   /* ANIMATION */
+  /* Browser prefixing ( kad rodytu seniesniuose browseriiuose (-webkit- */
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
   transform: scale(0.95);
+  -webkit-transform: scale(0.5s);
+  -ms-transform: scale(0.5s);
   transition: transform 0.5s, opacity 0.5s;
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
 }
 /* ANIMATION */
 .plan-box:hover {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
   transform: scale(1.03);
   opacity: 1;
 } 
@@ -538,13 +550,9 @@ textarea {
 textarea {height: 100px;}
 /* grid css span width per didelis, todel sumazinom, kad pavadinimai ir stulpeliai butu arciau vienas kito  */
 
-#form-name {
-  width: 22%;
-}
+#form-name {width: 22%;}
 
-input[type="checkbox"] {
-  margin: 10px 5px 10px 0;
-}
+input[type="checkbox"] {margin: 10px 5px 10px 0;}
 
 *:focus {outline: none;}
 
