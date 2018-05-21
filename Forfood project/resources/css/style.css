@@ -213,8 +213,8 @@ a:active {
 
 header {
   /* padaromas paveiksliukas patamsintas, kad butu galima uzrasyti teksta */
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg);
   background-size: cover;
     /* padaromas, kad paveiksliukas uzdengtu viska ir kad butu centre  */
   background-size: cover;
@@ -481,8 +481,8 @@ header {
 /* --------------------------------------------- */
 
  .section-testimonials {
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers-min.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers-min.jpg);
   background-size: cover;
   color: #fff;
   background-attachment: fixed;
@@ -606,8 +606,6 @@ textarea {
 
 textarea {height: 100px;}
 /* grid css span width per didelis, todel sumazinom, kad pavadinimai ir stulpeliai butu arciau vienas kito  */
-
-#form-name {width: 22%;}
 
 input[type="checkbox"] {margin: 10px 5px 10px 0;}
 
