@@ -319,6 +319,21 @@ header {
 .sticky .logo-black {display: block;}
 
 /* --------------------------------------------- */
+/* MOBILE NAVI*/
+/* --------------------------------------------- */
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+  
+}
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #fff;
+}
+
+/* --------------------------------------------- */
 /* features*/
 /* --------------------------------------------- */
 
@@ -679,3 +694,26 @@ footer p {
   margin-top: 20px;
   font-size: 70%;
 }
+
+/* --------------------------------------------- */
+/* ANIMATIONS */
+/* --------------------------------------------- */
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {opacity: 0;}
+
+.js--wp-1.animation,
+.js--wp-2.animation,
+.js--wp-3.animation {opacity: 1;}
+
+
+
+
+
+
+
+
+
+
+
+

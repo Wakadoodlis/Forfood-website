@@ -61,5 +61,52 @@ $(document).ready(function () {
         }
       }
     });
+      /* features */
+    $('.js--wp-1').waypoint(function(directions) {
+      $('.js--wp-1').addClass('animated fadeIn');
+    }, {
+      offset: '50%'
+    })
+    /* iphone img */
 
+    $('.js--wp-2').waypoint(function(directions) {
+      $('.js--wp-2').addClass('animated fadeInUp');
+    }, {
+      offset: '60%'
+    })
+
+    /* cities */
+
+    $('.js--wp-3').waypoint(function(directions) {
+      $('.js--wp-3').addClass('animated fadeInRight');
+    }, {
+      offset: '60%'
+    })
+
+    /* plans */
+
+    $('.js--wp-4').waypoint(function(directions) {
+      $('.js--wp-4').addClass('animated pulse')
+    }, {
+      offset: '45%'
+    })
+
+    /* mobile nav */
+
+    $('.js--nav-icon').click(function() {
+      var nav = $('.js--main-nav');
+      var icon = $('.js--nav-icon i');
+
+      nav.slideToggle(200);
+      if (icon.hasClass('ion-ios-menu')) {
+          icon.addClass('ion-ios-close');
+          icon.removeClass('ion-ios-menu')
+      } else {
+          icon.addClass('ion-ios-menu');
+          icon.removeClass('ion-ios-close');
+      }
+
+    });
+
+        
 });
