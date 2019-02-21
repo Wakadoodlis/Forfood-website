@@ -1,0 +1,132 @@
+
+/* big tablets to 1200px  */
+@media only screen and (max-width:1200px) {
+  .hero-text-box {
+    width: 100%;
+    padding: 0 1%;
+  }
+
+  .row {padding: 0 1%;}
+}
+
+
+/* small tablets to big ones: from 768px to 1023px */
+@media only screen and (max-width:1023px) {
+
+  body {font-size: 15px;}
+  section {padding: 50px 0;}
+  .long-copy {
+    width:70%;
+    margin-left:8%;
+  }
+
+  .step-box {margin-top:8px;}
+  .step-box:last-child {margin-top:8px;}
+  .work-step {margin-bottom:30px;}
+  .work-step:last-child {margin-bottom:50px;}
+  .app-screen {width:50%;}
+  .icon-small {
+    width:16px;
+    padding-right: 5px;
+  }
+  .city-features {font-size:80%}
+
+  .plan-box {
+    width:100%;
+    margin-left:0%;
+  }
+
+  .step-box:first-child { text-align: center;}
+  
+
+  .plan-price {font-size:240%;}
+
+  .contact-form {width:80%;}
+ /* mano */
+  h2,
+  h3 { width:100%;}
+  
+
+}
+
+
+
+
+/* small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+
+  body {font-size: 15px;}
+  section {padding: 25px 0;}
+
+  .row,
+  .hero-text-box {padding: 0 4%;}
+
+  .col {
+    width:100%;
+    margin: 0% 0 4% 0%;
+  }
+
+  .main-nav {display:none;}
+  .mobile-nav-icon {display: inline-block;}
+
+  .main-nav {
+    float:left;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  .main-nav li {display:block;}
+
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    border:0;
+    padding: 10px 0;
+    font-size: 100%;
+  }
+
+  .sticky .main-nav {margin-top: 10px;}
+
+
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {padding: 10px 0;}
+  .sticky .mobile-nav-icon i {color:#555;}
+  .sticky .mobile-nav-icon {margin-top: 10px;}
+
+
+
+
+  .long-copy {
+    width:100%;
+    margin-left:0%;
+  }
+  h1 {font-size:160%;}
+  h2 {font-size:140%;}
+
+
+  .work-step {margin-bottom:20px;}
+  .work-step:last-child {margin-bottom:20px;}
+
+  .works-step div {
+    height: 35px;
+    width: 35px;
+    margin-right: 15px;
+    padding: 4px;
+    font-size: 110%;
+  }
+  .app-screen {width:25%;}
+
+ /* mano */
+  h2,
+  h3 { width:100%;}
+
+}
+
+
+
+/* small phones: from 0px to 480px */
+@media only screen and (max-width: 480) {
+  section {padding: 25px 0;}
+  .contact-form {width:100%;}
+
+}
